@@ -1,9 +1,24 @@
 {
   "name": "recoil-modals",
-  "description": "The library that helps to dynamically manage modals using recoil and lazy loading",
+  "description": "Package that helps to dynamically manage modals using recoil and lazy loading",
   "version": "1.0.0",
+  "license": "MIT",
+  "author": "Denys Shevchuk <danbogameden@gmail.com>",
+  "homepage": "https://github.com/TM7777777/recoil-modals",
+  "repository": {
+    "url": "https://github.com/TM7777777/recoil-modals"
+  },
+  "keywords": [
+    "state",
+    "react",
+    "recoil",
+    "store",
+    "modals"
+  ],
+  "main": "./dist/recoil-modals.umd.js",
+  "module": "./dist/recoil-modals.mjs",
+  "types": "./dist/types.d.ts",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build"
   },
   "devDependencies": {
@@ -11,12 +26,14 @@
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@types/uuid": "^9.0.7",
+    "@vitejs/plugin-react": "^4.0.0",
     "lodash.isequal": "^4.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "recoil": "^0.7.7",
     "typescript": "^5.0.2",
     "uuid": "^9.0.1",
-    "vite": "^4.3.9"
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^3.7.0"
   }
 }
