@@ -20,7 +20,7 @@ It takes a generic `PureProps` type that defines the props that will be passed t
 The `createModal` function takes a callback function that dynamically imports the modal component.
 
 ```ts
-import { createModal, loadModal } from "recoil-modals";
+import { createModal, loadModal } from "recoil-modals/dist/tools";
 import { PureProps } from "./types";
 
 const modal = createModal<PureProps>(
@@ -56,7 +56,7 @@ The file should contain the code for your modal window, `props` will be those th
 also by default, props will contain a function for closing the modal window `onClose`.
 
 ```ts
-import { ExtendModalProps } from "recoil-modals/types";
+import { ExtendModalProps } from "recoil-modals/dist/types";
 
 export type PureProps = {
   onDelete(): void;
@@ -80,7 +80,7 @@ In your main file needs to place `ModalProvider` beetween `RecoilRoot` and your 
 
 ```ts
 import { RecoilRoot } from "recoil";
-import { ModalProvider } from "recoil-modals";
+import { ModalProvider } from "recoil-modals/dist/provider";
 
 <RecoilRoot>
   <ModalProvider>
@@ -102,7 +102,7 @@ import { ModalProvider } from "recoil-modals";
 Use `useShowModal` that returns `showModal`. Needs to it call with `open` func - the modal created before and modal will be showed.
 
 ```ts
-import { useShowModal } from "recoil-modals";
+import { useShowModal } from "recoil-modals/dist/tools";
 import { openDeleteModal } from "./modals/DeleteModal"; // import modal from `index.tsx` created above
 
 const Component = () => {
