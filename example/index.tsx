@@ -1,4 +1,4 @@
-import { createModal, loadModal } from "../src/tools";
+import { createModal, loadModal } from "../dist/tools";
 import { PureProps } from "./types";
 
 const modal = createModal<PureProps>(

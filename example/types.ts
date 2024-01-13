@@ -1,4 +1,4 @@
-import { ExtendModalProps } from "../src/types";
+import { ExtendModalProps } from "../dist/types";
 
 export type PureProps = {
   onDelete(): void;

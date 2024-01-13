@@ -1,7 +1,7 @@
 {
   "name": "recoil-modals",
   "description": "Package that helps to dynamically manage modals using recoil and lazy loading",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "author": "Denys Shevchuk <danbogameden@gmail.com>",
   "homepage": "https://github.com/TM7777777/recoil-modals#README",
