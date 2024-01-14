@@ -113,7 +113,7 @@ const Component = () => {
       onDelete: () => {},
       entity: "user",
     }),
-  ), []);
+  ), [showModal]);
 };
 ```
 
