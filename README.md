@@ -30,7 +30,7 @@ const modal = createModal<PureProps>(
 export const openDeleteModal = (props: PureProps) => loadModal(modal, props);
 ```
 
-#### modals.tsx
+#### modal.tsx
 
 The file should contain the code for your modal window, `props` will be those that you pass to the `loadModal` function,
 also by default, props will contain a function for closing the modal window `onClose`
@@ -103,7 +103,7 @@ Use `useShowModal` that returns `showModal`. Needs to it call with `open` func -
 
 ```ts
 import { useShowModal } from "recoil-modals/dist/tools";
-import { openDeleteModal } from "./modals/DeleteModal"; // import modal from `index.tsx` created above
+import { openDeleteModal } from "./modal/DeleteModal"; // import modal from `index.tsx` created above
 
 const Component = () => {
   const showModal = useShowModal();
