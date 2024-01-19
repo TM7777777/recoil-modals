@@ -1,7 +1,7 @@
 {
   "name": "recoil-modals",
   "description": "Package that helps to dynamically manage modals using recoil and lazy loading",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "author": "Denys Shevchuk <danbogameden@gmail.com>",
   "homepage": "https://github.com/TM7777777/recoil-modals#README",
@@ -37,11 +37,13 @@
     "uuid": "^9.0.1",
     "webpack-cli": "^5.1.4"
   },
-  "peerDependencies": {
+  "dependencies": {
     "lodash.isequal": "^4.5.0",
+    "uuid": "^9.0.1"
+  },
+  "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "recoil": "^0.7.7",
-    "uuid": "^9.0.1"
+    "recoil": "^0.7.7"
   }
 }
